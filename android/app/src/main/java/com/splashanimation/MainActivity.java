@@ -1,7 +1,6 @@
 package com.splashanimation;
 
 import com.facebook.react.ReactActivity;
-// react-native-splash-screen >= 0.3.1
 import org.devio.rn.splashscreen.SplashScreen;
 import android.os.Bundle;
 
@@ -12,7 +11,9 @@ public class MainActivity extends ReactActivity {
    * rendering of the component.
    */
   protected void onCreate(Bundle savedInstanceState) {
-    SplashScreen.show(this);
+    // SplashScreen.show(this);
+    SplashScreen.show(this, R.id.lottie); // here
+    SplashScreen.setAnimationFinished(true); 
     super.onCreate(savedInstanceState);
   }
 
