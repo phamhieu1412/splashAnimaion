@@ -5,7 +5,7 @@ export class App extends Component {
   componentDidMount() {
     setTimeout(() => {
       SplashScreen.hide();
-    }, 500);
+    }, 1500);
   }
   render() {
     return (
