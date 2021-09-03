@@ -17,6 +17,8 @@
 		2DCD954D1E0B4F2C00145EB5 /* splashAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* splashAnimationTests.m */; };
 		625AFAC9F0E3ACA247CD527E /* libPods-splashAnimation-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B47C711A71C95083868804F /* libPods-splashAnimation-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		843A192026E1CAC400A00CAE /* game_splash.json in Resources */ = {isa = PBXBuildFile; fileRef = 843A191F26E1CAC400A00CAE /* game_splash.json */; };
+		843A192326E1CB1500A00CAE /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843A192226E1CB1500A00CAE /* Dynamic.swift */; };
 		8C2EFB712CB0318EA4A2663F /* libPods-splashAnimation-splashAnimationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960B63450BFBB2180FDF9848 /* libPods-splashAnimation-splashAnimationTests.a */; };
 		93BA8F95F9210CE93E6C8C1E /* libPods-splashAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3CA1077E154D4853730A08 /* libPods-splashAnimation.a */; };
 		A981EBBAC1395C0FAAD3C3A0 /* libPods-splashAnimation-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 752359A7A3E30C5C88EB4D2F /* libPods-splashAnimation-tvOS.a */; };
@@ -62,6 +64,9 @@
 		752359A7A3E30C5C88EB4D2F /* libPods-splashAnimation-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-splashAnimation-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE7104E67BF296E7B75C03A /* Pods-splashAnimation-splashAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splashAnimation-splashAnimationTests.release.xcconfig"; path = "Target Support Files/Pods-splashAnimation-splashAnimationTests/Pods-splashAnimation-splashAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = splashAnimation/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		843A191F26E1CAC400A00CAE /* game_splash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = game_splash.json; sourceTree = "<group>"; };
+		843A192126E1CB1300A00CAE /* splashAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "splashAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		843A192226E1CB1500A00CAE /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		960B63450BFBB2180FDF9848 /* libPods-splashAnimation-splashAnimationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-splashAnimation-splashAnimationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA2B7D9FAC748FF2EE0539F1 /* Pods-splashAnimation-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splashAnimation-tvOS.release.xcconfig"; path = "Target Support Files/Pods-splashAnimation-tvOS/Pods-splashAnimation-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5C7564D1909ADE781F757E1 /* Pods-splashAnimation-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splashAnimation-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-splashAnimation-tvOSTests/Pods-splashAnimation-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +137,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				843A192226E1CB1500A00CAE /* Dynamic.swift */,
 			);
 			name = splashAnimation;
 			sourceTree = "<group>";
@@ -161,7 +167,6 @@
 				61BAA8A4BAC6CBBF30DA143D /* Pods-splashAnimation-tvOSTests.debug.xcconfig */,
 				E5C7564D1909ADE781F757E1 /* Pods-splashAnimation-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -175,6 +180,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				843A191F26E1CAC400A00CAE /* game_splash.json */,
+				843A192126E1CB1300A00CAE /* splashAnimation-Bridging-Header.h */,
 				13B07FAE1A68108700A75B9A /* splashAnimation */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* splashAnimationTests */,
@@ -209,7 +216,6 @@
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				47834C2B92160F40959B85AE /* [CP] Embed Pods Frameworks */,
 				8B08048ADD55A56CD1B09801 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -232,7 +238,6 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				0C9EA0E4AD5B49E512FAF61B /* [CP] Embed Pods Frameworks */,
 				A8BCA8487930E7F636E1FE21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -296,7 +301,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1250;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -343,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				843A192026E1CAC400A00CAE /* game_splash.json in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,24 +385,6 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		0C9EA0E4AD5B49E512FAF61B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-splashAnimation/Pods-splashAnimation-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-splashAnimation/Pods-splashAnimation-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,24 +398,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		47834C2B92160F40959B85AE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-splashAnimation-splashAnimationTests/Pods-splashAnimation-splashAnimationTests-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenSSL.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-splashAnimation-splashAnimationTests/Pods-splashAnimation-splashAnimationTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		4EB2AB996C49CF100ED4AAB4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -606,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843A192326E1CB1500A00CAE /* Dynamic.swift in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -648,6 +619,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 72851545048235AC527CEBB9 /* Pods-splashAnimation-splashAnimationTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -671,6 +643,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BE7104E67BF296E7B75C03A /* Pods-splashAnimation-splashAnimationTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = splashAnimationTests/Info.plist;
@@ -704,6 +677,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = splashAnimation;
+				SWIFT_OBJC_BRIDGING_HEADER = "splashAnimation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -726,6 +700,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = splashAnimation;
+				SWIFT_OBJC_BRIDGING_HEADER = "splashAnimation-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

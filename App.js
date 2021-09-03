@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import {Text, View} from 'react-native';
-import SplashScreen from 'react-native-splash-screen';
+import SplashScreen from 'react-native-lottie-splash-screen';
 export class App extends Component {
   componentDidMount() {
-    SplashScreen.hide();
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 500);
   }
   render() {
     return (

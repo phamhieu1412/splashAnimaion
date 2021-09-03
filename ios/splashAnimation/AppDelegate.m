@@ -3,6 +3,8 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import "RNSplashScreen.h" // here
+#import "splashAnimation-Swift.h"
 
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
@@ -43,6 +45,20 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+
+  // Splash Screen Code
+  Dynamic *t = [Dynamic new];
+   UIView *animationView = [t createAnimationViewWithRootView:rootView lottieName:@"game_splash"]; // change lottieName to your lottie files name
+   animationView.backgroundColor = [UIColor whiteColor]; // change background color
+   // register LottieSplashScreen to RNSplashScreen
+   [RNSplashScreen showLottieSplash:animationView inRootView:rootView];
+
+   // play
+   [t playWithAnimationView:animationView];
+
+   [RNSplashScreen setAnimationFinished:true];
+  // Splash Screen Code End Here
+
   return YES;
 }
 
